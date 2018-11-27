@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Work+Sans');
+
+/* COLORS */
+/* 
+RED: #BE1E2D 
+GRAY: #E6E6E6
+
+MEDIUM RED: #A41021
+DARKEST RED: #720A1C
+*/
+
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Link styling */
+/* unvisited link */
+a:link {
+  color: gray;
+}
+a:visited {
+  color: gray;
+}
+/* mouse over link */
+a:hover {
+  color: #E0ADB8;
+  text-decoration: none;
+}
+
+.left {
+  height: 20vh;
+  overflow: hidden;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/streetred.jpg");
+  background-position: center;
+  background-size: cover;
+  color:white;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo{
+  margin-bottom: 10px;
+}
+
+.right {
+  padding: 30px 40px 0px 40px;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-images {
+  margin: 20px 0px 20px 0px;
+}
+
+/* OVERRIDING THE REACT PACKAGE STYLING */
+.carousel.carousel-slider {
+  width: 100% !important;
+}
+.carousel .slide .legend {
+  background-color: #720A1C !important;
+  border-radius: 0% !important;
+}
+
+/* Social Media Links */
+.social-icon {
+  margin: 5px;
+}
+
+/* tablet portrait */
+@media (min-width: 768px) {
+  .left{
+    height: 100vh;
+    position: sticky;
+  }
+  .right {
+    padding: 30px 10px 0px 10px;
+  }
+  .logo {
+    width: 50px;
+  }
+  .nav{
+    flex-direction: column
+  }
+  .carousel.carousel-slider {
+    width: 60% !important;
+    margin-left: 20% !important;
+  }
+}
